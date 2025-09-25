@@ -1,0 +1,195 @@
+/* Genel Stil */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Header ve Navigasyon */
+header {
+  background-color: #263f89;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+/* Bölümler */
+section {
+  padding: 30px 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#hero {
+  text-align: center;
+  background-color: #e6e6e6;
+  padding: 50px 20px;
+}
+
+/* Araç Kartları */
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.car-card {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 250px;
+}
+
+.car-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Formlar */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+input, select, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Tablolar */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #222;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Modal Stil */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal:target {
+  display: block;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Sayfa içeriği için container */
+.container {
+    max-width: 800px; /* İstersen genişliği değiştirebilirsin */
+    margin: 0 auto;   /* Sayfada ortala */
+    padding: 0 20px;  /* Sol ve sağdan boşluk, yazılar kenara yapışmaz */
+}
+
+/* Başlık ve paragrafları ortala */
+h1, h2, p {
+    text-align: center; /* Yazıları yatayda ortalar */
+    margin-bottom: 15px; /* Alt boşluk */
+}
+
+/* Menü linkleri ortalanmış */
+nav {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007BFF; /* Hover efekti */
+}
+

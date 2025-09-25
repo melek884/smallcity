@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Otonom Araç Kiralama</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Otonom Araç Kiralama</h1>
+  <nav>
+    <a href="index.html" class="active" >Ana Sayfa</a>
+    <a href="hakkimizda/hakkimizda.html">Hakkımızda</a>
+    <a href="iletisim/iletisim.html">İletişim</a>
+    <a href="#fiyatlarModal">Fiyat Tablosu</a>
+  </nav>
+</header>
+
+<section id="hero">
+  <h2>Geleceğin Yolculuğu Burada</h2>
+  <p>Otonom araçlarımızla güvenli ve konforlu bir yolculuk deneyimi yaşayın.</p>
+</section>
+
+<section id="araclar">
+  <h2>Mevcut Araçlar</h2>
+  <div class="car-list">
+
+    <!-- Mercedes -->
+    <div class="car-card">
+      <a href="#mercedesModal"><img src="/Araclar/mercedesbenzcserisi.jpg" alt="Mercedes C 200"></a>
+      <h3>Mercedes C 200 Serisi</h3>
+      <ul><li>Otonom Seviye: 4</li><li>Menşei: Almanya</li></ul>
+    </div>
+
+    <!-- Audi -->
+    <div class="car-card">
+      <a href="#audiModal"><img src="/Araclar/audia5.jpg" alt="Audi A5"></a>
+      <h3>Audi A5</h3>
+      <ul><li>Otonom Seviye: 4</li><li>Menşei: Almanya</li></ul>
+    </div>
+
+    <!-- Tesla -->
+    <div class="car-card">
+      <a href="#teslaModal"><img src="/Araclar/teslamodely.jpg" alt="Tesla Model Y Standart"></a>
+      <h3>Tesla Model Y Standart</h3>
+      <ul><li>Otonom Seviye: 5</li><li>Menşei: ABD</li></ul>
+    </div>
+
+    <!-- BMW -->
+    <div class="car-card">
+      <a href="#bmwModal"><img src="/Araclar/bmw4.jpg" alt="BMW 4"></a>
+      <h3>BMW 4 Serisi</h3>
+      <ul><li>Otonom Seviye: 4</li><li>Menşei: Almanya</li></ul>
+    </div>
+
+    <!-- Volvo -->
+    <div class="car-card">
+      <a href="#volvoModal"><img src="/Araclar/volvos60.jpg" alt="Volvo S60"></a>
+      <h3>Volvo S60</h3>
+      <ul><li>Otonom Seviye: 3</li><li>Menşei: İsveç</li></ul>
+    </div>
+
+    <!-- Seat -->
+    <div class="car-card">
+      <a href="#atecaModal"><img src="/Araclar/seatateca.jpg" alt="Seat Ateca"></a>
+      <h3>Seat Ateca</h3>
+      <ul><li>Otonom Seviye: 3</li><li>Menşei: İspanya</li></ul>
+    </div>
+
+    <!-- Hyundai -->
+    <div class="car-card">
+      <a href="#hyundaiModal"><img src="/Araclar/hyundaitucson.jpg" alt="Hyundai Tucson"></a>
+      <h3>Hyundai Tucson</h3>
+      <ul><li>Otonom Seviye: 3</li><li>Menşei: Güney Kore</li></ul>
+    </div>
+
+    <!-- Peugeot -->
+    <div class="car-card">
+      <a href="#peugeotModal"><img src="/Araclar/peugeot3008.jpg" alt="Peugeot 3008"></a>
+      <h3>Peugeot 3008</h3>
+      <ul><li>Otonom Seviye: 3</li><li>Menşei: Fransa</li></ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="kirala">
+  <h2>Kiralama Formu</h2>
+  <form>
+    <label for="isim">Ad Soyad:</label>
+    <input type="text" id="isim" name="isim" required>
+    <label for="arac">Araç Seçin:</label>
+    <select id="arac" name="arac">
+      <option value="mercedes">Mercedes C 200 Serisi</option>
+      <option value="audi">Audi A5</option>
+      <option value="tesla">Tesla Model Y Standart</option>
+      <option value="bmw">BMW 4 Serisi</option>
+      <option value="volvo">Volvo S60</option>
+      <option value="seat">Seat Ateca</option>
+      <option value="hyundai">Hyundai Tucson</option>
+      <option value="peugeot">Peugeot 3008</option>
+    </select>
+    <label for="gun">Gün Sayısı:</label>
+    <input type="number" id="gun" name="gun" min="1" required>
+    <label><input type="checkbox" name="sigorta"> Sigorta İstiyorum</label>
+    <button type="submit">Kiralama Talebi Gönder</button>
+  </form>
+</section>
+
+<!-- Hakkımızda, İletişim, Fiyatlar Modal -->
+<div id="hakkimizdaModal" class="modal">
+  <div class="modal-content">
+    <a href="#!" class="close">&times;</a>
+    <h2>Hakkımızda</h2>
+    <p>Otonom Araç Kiralama, güvenli ve çevre dostu ulaşım sunmayı hedefleyen bir öğrenci projesidir.</p>
+  </div>
+</div>
+
+
+<div id="fiyatlarModal" class="modal">
+  <div class="modal-content">
+    <a href="#!" class="close">&times;</a>
+    <h2>Fiyat Tablosu</h2>
+    <table>
+      <tr><th>Araç</th><th>Günlük Ücret</th><th>Sigorta</th></tr>
+      <tr><td>Mercedes C 200 Serisi</td><td>3500₺</td><td>450₺</td></tr>
+      <tr><td>Audi A5</td><td>4500₺</td><td>500₺</td></tr>
+      <tr><td>Tesla Model Y Standart</td><td>4000₺</td><td>300₺</td></tr>
+      <tr><td>BMW 4 Serisi</td><td>2750₺</td><td>250₺</td></tr>
+      <tr><td>Volvo S60</td><td>2000₺</td><td>250₺</td></tr>
+      <tr><td>Seat Ateca</td><td>2000₺</td><td>200₺</td></tr>
+      <tr><td>Hyundai Tucson</td><td>2000₺</td><td>200₺</td></tr>
+      <tr><td>Peugeot 3008</td><td>1800₺</td><td>200₺</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- Araçlara özel modallar -->
+<div id="mercedesModal" class="modal">
+  <div class="modal-content">
+    <a href="#!" class="close">&times;</a>
+    <h2>Mercedes C 200 Serisi</h2>
+    <p>Motor: 1.6L Dizel </p>
+    <p>Beygir Gücü: 136 HP</p>
+    <p>Tork: 320 Nm</p>
+    <p>Şanzıman: 7 İleri Otomatik</p>
+    <p>Yakıt Tüketimi: 4.6 lt</p>
+    <p>Azami Hız: 216 km/s</p>
+  </div>
+</div>
+
+<div id="audiModal" class="modal">
+  <div class="modal-content">
+    <a href="#!" class="close">&times;</a>
+    <h2>Audi A5</h2>
+    <p>Motor: 2.0L Dizel </p>
+    <p>Beygir Gücü: 190 HP</p>
+    <p>Tork: 400 Nm</p>
+    <p>Şanzıman: 7 İleri Otomatik</p>
+    <p>Yakıt Tüketimi: 6 lt</p>
+    <p>Azami Hız: 235 km/s</p>
+  </div>
+</div>
+
+<div id="teslaModal" class="modal">
+  <div class="modal-content">
+    <a href="#!" class="close">&times;</a>
+    <h2>Tesla Model Y Standart</h2>
+    <p>Motor: Elektrikli </p>
+    <p>Beygir Gücü: 299 HP</p>
+    <p>Tork: 420 Nm</p>
+    <p>Şanzıman: Otomatik</p>
+    <p>Menzil: 455 km/s</p>
+    <p>Azami Hız: 217 km/s</p>
+  </div>
+</div>
+
+<div id="bmwModal" class="modal">
+  <div class="modal-content">
+    <a href="#!" class="close">&times;</a>
+    <h2>BMW 4 Serisi</h2>
+    <p>Motor: 1.5L Benzin </p>
+    <p>Beygir Gücü: 136 HP</p>
+    <p>Tork: 220 Nm</p>
+    <p>Şanzıman: 8 İleri Otomatik</p>
+    <p>Yakıt Tüketimi: 5.3 lt</p>
+    <p>Azami Hız: 212 km/s</p>
+  </div>
+</div>
+
+<div id="volvoModal" class="modal">
+  <div class="modal-content">
+    <a href="#!" class="close">&times;</a>
+    <h2>Volvo S60</h2>
+    <p>Motor: 2.0L Dizel </p>
+    <p>Beygir Gücü: 181 HP</p>
+    <p>Tork: 400 Nm</p>
+    <p>Şanzıman: 8 İleri Otomatik</p>
+    <p>Yakıt Tüketimi: 4.1 lt</p>
+    <p>Azami Hız: 225 km/s</p>
+  </div>
+</div>
+
+<div id="atecaModal" class="modal">
+  <div class="modal-content">
+    <a href="#!" class="close">&times;</a>
+    <h2>Seat Ateca</h2>
+    <p>Motor: 1.5L Benzin </p>
+    <p>Beygir Gücü: 150 HP</p>
+    <p>Tork: 250 Nm</p>
+    <p>Şanzıman: 7 İleri Otomatik</p>
+    <p>Yakıt Tüketimi: 6.4 lt</p>
+    <p>Azami Hız: 198 km/s</p>
+  </div>
+</div>
+
+<div id="hyundaiModal" class="modal">
+  <div class="modal-content">
+    <a href="#!" class="close">&times;</a>
+    <h2>Hyundai Tucson</h2>
+    <p>Motor: 1.6L Dizel </p>
+    <p>Beygir Gücü: 136 HP</p>
+    <p>Tork: 320 Nm</p>
+    <p>Şanzıman: 7 İleri Otomatik</p>
+    <p>Yakıt Tüketimi: 5.1 lt</p>
+    <p>Azami Hız: 180 km/s</p>
+  </div>
+</div>
+
+<div id="peugeotModal" class="modal">
+  <div class="modal-content">
+    <a href="#!" class="close">&times;</a>
+    <h2>Hyundai Tucson</h2>
+    <p>Motor: 1.5L Dizel </p>
+    <p>Beygir Gücü: 130 HP</p>
+    <p>Tork: 300 Nm</p>
+    <p>Şanzıman: 8 İleri Otomatik</p>
+    <p>Yakıt Tüketimi: 4.1 lt</p>
+    <p>Azami Hız: 192 km/s</p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Otonom Araç Kiralama | Öğrenci Projesi</p>
+</footer>
+
+</body>
+</html>
